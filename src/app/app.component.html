@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<app-filho [recebeFamilia]="familia" (respostaFamilia)="reciverFeedback($event)"></app-filho>
+
+<ul>
+  <li *ngFor="let f of familiaFiltrada">
+    {{f.nome}} {{f.sobreNome}}
+  </li>
+</ul>
